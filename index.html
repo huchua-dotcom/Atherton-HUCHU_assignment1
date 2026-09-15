@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atherton Huchu — Software Engineering student portfolio and profile page, built with semantic HTML5.">
+  <title>Atherton Huchu | Software Engineering Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Atherton Huchu</h1>
+    <p class="tagline">Software Engineering student, building things that work and learning why they work.</p>
+    <nav aria-label="Section navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        <!-- Replace this paragraph with your own edited About copy — see PROMPT_LOG.md
+             for the prompt you used, the AI's raw draft, and how you rewrote it. -->
+        I'm a second-year Software Engineering student at Africa University, currently working
+        through Web Technologies and getting comfortable with the idea that a web page is really
+        just structured meaning before it's ever decoration. I like breaking small problems down
+        until they're boring, then building them back up in code.
+      </p>
+
+      <article aria-labelledby="focus-heading">
+        <h3 id="focus-heading">What I'm Focused On Right Now</h3>
+        <p>
+          Learning semantic HTML5, native form validation, and how to write clear prompts when
+          using AI tools like Claude as part of my workflow rather than a shortcut around it.
+        </p>
+      </article>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul>
+        <li>
+          <h3>Unit II Practical: This Portfolio Page</h3>
+          <p>A semantic, accessible mini-portfolio built for CIS2103, with a native-HTML5-validated contact form.</p>
+        </li>
+        <!-- Add more <li> project entries here as you build your portfolio. -->
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form action="#" method="post" novalidate>
+
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            placeholder="Atherton Huchu">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="you@example.com">
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9+ ]{7,15}"
+            placeholder="+263 77 123 4567">
+        </div>
+
+        <div class="form-row">
+          <label for="topic">Reason for contacting me</label>
+          <select id="topic" name="topic" required>
+            <option value="">Select one</option>
+            <option value="collaboration">Project collaboration</option>
+            <option value="job">Job opportunity</option>
+            <option value="feedback">Feedback on my work</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            minlength="10"
+            placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <aside aria-labelledby="note-heading">
+    <h2 id="note-heading">A Note on This Page</h2>
+    <p>
+      This page was built as Practical Assignment 1 for Web Technologies (CIS2103), Unit II.
+      It will be extended with responsive CSS3 and Tailwind styling in Unit III.
+    </p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2026 Atherton Huchu. Built for CIS2103 — Web Technologies, Africa University.</p>
+  </footer>
+
+</body>
+</html>
